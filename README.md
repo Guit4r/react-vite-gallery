@@ -6,7 +6,7 @@ Designed for the Full-Stack Developer assessment.
 ## 🔗 Live Demo
 
 🌐 [https://spa-gallery.vercel.app](https://spa-gallery.vercel.app)  
-📦 [GitHub Repository](https://github.com/yourusername/spa-gallery)
+📦 [GitHub Repository](https://github.com/Guit4r/react-vite-gallery)
 
 ---
 
@@ -66,8 +66,8 @@ Designed for the Full-Stack Developer assessment.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/spa-gallery
-cd spa-gallery
+git clone https://github.com/Guit4r/react-vite-gallery
+cd react-vite-gallery
 ```
 
 ### 2. Install dependencies
