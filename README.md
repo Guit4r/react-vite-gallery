@@ -5,7 +5,7 @@ Designed for the Full-Stack Developer assessment.
 
 ## 🔗 Live Demo
 
-🌐 [https://spa-gallery.vercel.app](https://spa-gallery.vercel.app)  
+🌐 [https://react-vite-gallery.vercel.app](https://spa-gallery.vercel.app)  
 📦 [GitHub Repository](https://github.com/Guit4r/react-vite-gallery)
 
 ---
