@@ -19,7 +19,7 @@ export default function Gallery() {
     // Infinite scroll
     useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
-            if (entry.isIntersecting) {
+            if (entry.isIntersecting && !filter) {
                 setImages((prev) => [...prev, ...generateImageData(10, imgDataCount)]);
                 setImgDataCount((prev) => prev + 10);
             }
@@ -27,7 +27,7 @@ export default function Gallery() {
 
         if (loaderRef.current) observer.observe(loaderRef.current);
         return () => observer.disconnect();
-    }, [imgDataCount]);
+    }, [imgDataCount, filter]);
 
     // All unique hashtags
     const allTags = Array.from(new Set(images.flatMap((img) => img.hashtags)));
@@ -42,8 +42,6 @@ export default function Gallery() {
         768: 2,
         640: 1,
     };
-
-    console.log(filteredImages);
 
     return (
         <div className="min-h-screen">
@@ -73,5 +71,4 @@ export default function Gallery() {
         </div>
     );
 }
-
 
