@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* Masonry layout overrides */
+.my-masonry-grid {
+    display: -webkit-box; /* Not needed if you don't support Safari */
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -1rem; /* gutter size offset */
+    width: auto;
+  }
+  .my-masonry-grid_column {
+    padding-left: 1rem; /* gutter size */
+    background-clip: padding-box;
+  }
+  
+  /* Optional: spacing between items */
+  .my-masonry-grid_column > div {
+    margin-bottom: 1rem;
+  }
+  
