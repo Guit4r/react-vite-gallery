@@ -1,4 +1,8 @@
-import type { Props } from "../types/props";
+export interface Props {
+    allTags: string[];
+    selectedTag: string | null;
+    onTagClick: (tag: string | null) => void;
+}
 
 export default function HashtagFilter({ allTags, selectedTag, onTagClick }: Props) {
     return (
